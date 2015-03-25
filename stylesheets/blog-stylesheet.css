@@ -1,0 +1,41 @@
+html {
+  width: 1200px ;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  background-color: blue;
+  border: 2px solid blue;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  width: 80%;
+}
+
+h4 {
+  background-color: black;
+  border: 2px solid black: ;
+  color: white;
+  margin: 10px auto;
+  padding: 10px;
+  position: relative;
+  left: 388px;
+  width: 15%;
+  text-align: center;
+
+}
+section {
+  font-family: "Arial", Georgia, Serif;
+  border: 1px solid black;
+  margin: auto;
+  width: 80%;
+}
+
+p {
+  padding: 10px;
+}
