@@ -79,6 +79,10 @@ main {
 
 }
 
+main h1 {
+  font-size: 50px;
+}
+
 main h3 {
   font-size: 100px;
   text-align: center;
@@ -89,6 +93,23 @@ main h4 {
   font-size: 33px;
   text-align: center;
   margin: 0 auto;
+}
+
+#blog h1 {
+  font-size: 50px;
+}
+
+#blog a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#blog a:visited {
+  color: #D99B77;
+}
+
+#blog a:hover {
+  color: #F2F2F2;
 }
 
 .cf:before,
