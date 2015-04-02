@@ -108,11 +108,31 @@ main h5 {
 main p, li {
   font-size: 20px;
 }
+
+main a {
+  color: #FF0000;
+  text-decoration: none;
+}
+
+main a:visited {
+  color: #D99B77;
+}
+
+main a:hover {
+  color: #F2F2F2;
+}
+main code {
+  background: #F2F2F2;
+  font-size: 15px;
+  padding: 10px;
+}
+
 #blog h1 {
   font-size: 50px;
 }
 
 #blog a {
+  color: #FF0000;
   font-size: 20px;
   text-decoration: none;
 }
