@@ -162,6 +162,9 @@ main code {
   color: #F2F2F2;
 }
 
+section {
+  margin-bottom: 50px;
+}
 footer {
   height: 55px;
   position: relative;
