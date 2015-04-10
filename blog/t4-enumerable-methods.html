@@ -31,11 +31,15 @@
 
   <section>
     <p>In the Ruby language, there are many ways to use methods to help solve problems or make the code do something for you. Ruby like most other languages have built in ways to work through data to get certain information back so that one can use it for other purposes. One of those methods are #cycle.</p>
-    <p>Now let's discuss a little about enumeration and what that means. <a href="http://en.wikipedia.org/wiki/Enumeration">Wikipedia</a>defines enumeration as a complete, ordered listing of all the items in a collection. The act of enumerating is to mention seperately as if in counting; name one by one; specify, as in a list. Ruby has a number of ways to do this. </p>
+    <p>Now let's discuss a little about enumeration and what that means. <a href="http://en.wikipedia.org/wiki/Enumeration">Wikipedia</a> defines enumeration as a complete, ordered listing of all the items in a collection. The act of enumerating is to mention seperately as if in counting; name one by one; specify, as in a list. Ruby has a number of ways to do this. </p>
     <p>With the method #cycle, when called on a set of numbers, can perform a block of code on each and every item in that set of numbers. You can also call it to enumerate over the set as many times as you like by passing it a value for however many times you would like it to go over teh set of numbers. Take note that if you do not pass it a number, it will repeat itself indefintely and cause a loop that never ends.</p>
     <code>
       a = ['a', 'b', 'c']
+    </code>
+    <code>
       a.cycle { |x| puts x } => print, a,b,c,a,b,c,....forever
+    </code>
+    <code>
       a.cycle(2) { |x| puts x } => print, a,b,c,a,b,c.
     </code>
 
@@ -45,9 +49,9 @@
 </body>
 <footer>
   <div id="social-media">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
+    <a href="https://github.com/hukashi"><img src="imgs/github-icon.png" alt="Github"></a>
+    <a href="https://twitter.com/HuKaShI"><img src="imgs/twitter-icon.png" alt="Twitter"></a>
+    <a href="https://www.facebook.com/jonathan.chung.116"><img src="imgs/facebook-icon.png" alt="Facebook"></a>
   </div>
 </footer>
 </html>
