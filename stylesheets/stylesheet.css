@@ -1,6 +1,7 @@
 html {
   background-color: #5B85D9;
   height: 100%;
+  margin: 0 auto;
   width: 1500px;
 }
 
@@ -110,7 +111,7 @@ main p, li {
 }
 
 main a {
-  color: #FF0000;
+  color: #48D1CC;
   text-decoration: none;
 }
 
@@ -126,7 +127,9 @@ main code {
   font-size: 15px;
   padding: 10px;
 }
-
+#blog {
+  padding-bottom: 100px;
+}
 #blog h1 {
   font-size: 50px;
 }
