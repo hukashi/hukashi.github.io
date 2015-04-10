@@ -138,6 +138,7 @@ main a:hover {
 }
 main code {
   background: #F2F2F2;
+  display: block;
   font-size: 15px;
   padding: 10px;
 }
@@ -166,6 +167,7 @@ section {
   margin-bottom: 50px;
 }
 footer {
+  bottom: 0;
   height: 55px;
   position: relative;
   width: 100%;
