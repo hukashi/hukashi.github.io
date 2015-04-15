@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+      <title>Jonathan Chung - Web Dev</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css"><!--In the CSS challenge you will need to link to the CSS stylesheet.
+  The link has been left blank for now -->
+
+</head>
+<body>
+  <header>
+    <div id="header-logo">
+      <h1>JONATHAN CHUNG</h1>
+      <h2>WEB DEVELOPER</h2>
+    </div>
+    <nav>
+      <ul>
+        <li class="button"><a href="../index.html">HOME</a></li>
+        <li class="button"><a href="../myprojects.html">MY PROJECTS</a></li>
+        <li class="button"><a href="index.html">BLOG</a></li>
+        <li class="button"><a href="../aboutme.html">ABOUT ME</a></li>
+        <li class="button"><a href="../connect.html">CONNECT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <h1>Classes</h1>
+  <h2>When, Why and How</h2>
+  <h4>04-14-15</h4>
+
+  <section>
+    <p>When programming, there are many ways to get the outcome you want. It's simple when you want your program to do a very small task that doesn't require more than using a built-in class for that language. With Object Oriented Proframming(OOP), you have the ability to create programs that are quite extensive and can carry out many different programs for different scenarios. </p>
+    <p>When coding using the built in Classes, you can sometimes share the methods from other Classes in the one you are currently working with. This is fine. But as the program becomes more and more complex, with many developers working on it, it may be much more useful to work with new Classes that have not only Semantic meaning but can also have methods created for use within just that Class. This prevents future bugs from occuring because a method for one Class was used improperly and is now casuing havoc on the rest of your program.</p>
+    <p>Code becomes more maintainable. This is because objects are self contained within each Class. The reusability of ojects becomes important. A Class used in one program can be ported to another program if they are to be used in a similar fashion. Your programs are also easily scaled as the Classes can be updated to contain new algorithms and newer technology. </p>
+    <p>Classes keep order within your program. If you want items to be within a certain family, you can create a Class to rule them. Create methods for them and only them. </p>
+
+    <code><pre>
+    class Ball
+      attr_accessor :size, :sport, :color
+      def initialize(size, sport, color)
+        @size = size
+        @sport = sport
+        @color = color
+      end
+      def which_sport
+        puts "The sport you can play with this is #{@sport}"
+      end
+      def what_size
+        puts "The size of this ball is #{@size}"
+      end
+      def what_color
+        puts "The color of this ball is #{@color}"
+      end
+    end</pre>
+    </code>
+
+    <p>Classes are created using the class keyword. As you can see, this Class if for all manner of balls for various sports. You can then initialize the Class with any attributes you like. Then define specific methods for only your Class. These methods are called Instance Methods. You can also create Instance variables. This variables can only be used within this Class. They cannot be accessed by any objects in any other Class and so it is protected by manipulation from elsewhere in the program.</p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+</body>
+<footer>
+  <div id="social-media">
+    <a href="https://github.com/hukashi"><img src="../imgs/github-icon.png" alt="Github"></a>
+    <a href="https://twitter.com/HuKaShI"><img src="../imgs/twitter-icon.png" alt="Twitter"></a>
+    <a href="https://www.facebook.com/jonathan.chung.116"><img src="../imgs/facebook-icon.png" alt="Facebook"></a>
+  </div>
+</footer>
+</html>
