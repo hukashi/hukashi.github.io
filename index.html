@@ -4,41 +4,86 @@
 <head>
       <title>Jonathan Chung - Web Dev</title>
       <meta charset="UTF-8">
-      <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
-
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-  <header>
-    <div id="header-logo">
-      <h1>JONATHAN CHUNG</h1>
-      <h2>WEB DEVELOPER</h2>
-    </div>
-    <nav>
-      <ul>
-        <li class="button"><a href="index.html">HOME</a></li>
-        <li class="button"><a href="#">MY PROJECTS</a></li>
-        <li class="button"><a href="blog/index.html">BLOG</a></li>
-        <li class="button"><a href="#">ABOUT ME</a></li>
-        <li class="button"><a href="#">CONNECT</a></li>
+  <div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <a href="index.html" class='navbar-brand'>JONATHAN CHUNG</a>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="blog/index.html">BLOG</a></li>
+        <li><a href="#">MY PROJECTS</a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <h3>hello.</h3>
-    <h4>I'm Jonathan Chung,</h4>
-    <h4>a full-stack web developer.</h4>
-    <div id="tech_icons">
-    <img class="html_js_css" src="imgs/web-techs.png" alt="HTML, CSS, JS">
-    <img class="ruby" src="imgs/page_ruby_512.png" alt="Ruby">
-    <img class="ruby" src="imgs/RubyOnRails.png" alt="Ruby on Rails">
     </div>
-  </main>
-</body>
-<footer>
-  <div id="social-media">
-    <a href="https://github.com/hukashi"><img src="imgs/github-icon.png" alt="Github"></a>
-    <a href="https://twitter.com/HuKaShI"><img src="imgs/twitter-icon.png" alt="Twitter"></a>
-    <a href="https://www.facebook.com/jonathan.chung.116"><img src="imgs/facebook-icon.png" alt="Facebook"></a>
   </div>
-</footer>
+  <div class="container">
+    <div class="row" id='about-me'>
+      <div class="col-sm-6 col-xs-12">
+        <h2 class="text-center well">Full Stack Web Developer</h2>
+        <p>Hello, my name is Jonathan Chung.</p>
+        <p>I am a highly motivated individual that loves to take on challenges, especially the ones that require me to learn new technologies. I am excited to work on new projects as I want to create new things with exciting new technologies and frameworks.
+        <p>As a recent Dev Bootcamp grad, I have been busy working on side projects as well as this page to advertise the skills that I have learned and am currently learning. Dev Bootcamp is an intense 19 week program where I not only learned to become a Fullstack Developer by using Ruby and Rails but learned how to learn. Dev Bootcamp teaches it's students that anything is achievable and equips them to go out and tackle anything and learn it as fast as possible. Javascript, jQuery, as well as some time with Angular followed during my time at Dev Bootcamp. I was able to implement some API's as well in some of the work I did there. You can see my final project if you click the link to my projects which is called "kidpanion".</p>
+        <p>I have been in finance for most of my life and now would love to take on a new challenge. With my knowledge of Ruby and Rails, I believe I could achieve greater growth in not only using my knowledge of development but also the business acumen I have accumulated over the years. I have very strong communication, research, and analytical skills. Learning and building is my new passion that I am finally being able to realize.</p>
+        <p>When I am not coding, I love playing with my son and teaching him how to do things. I hope to start teaching him the basics of coding soon! I love to play golf and cook.</p>
+      </div>
+      <div class="col-sm-6">
+        <img src="imgs/jonathan-head.jpg" alt="Jonathan" class="img-responsive">
+      </div>
+    </div>
+    <div class="row" id="tech">
+      <div class="col-sm-12">
+        <h2 class="text-center well">Technologies</h2>
+        <div class="row">
+          <ul id="technologies">
+            <div class="col-sm-12">
+              <li><img src="imgs/web-techs.png"alt="HTML5 CSS3 JS" class="img-thumbnail"></li>
+              <li><img src="imgs/page_ruby_512.png" alt="Ruby" class="img-thumbnail"></li>
+            <!-- </div> -->
+            <!-- <div class="col-sm-6"> -->
+              <li><img src="imgs/RubyonRails.png" alt="Ruby on Rails" class="img-thumbnail"></li>
+              <li><img src="imgs/Bootstrap_logo.png" alt="Bootstrap" class="img-thumbnail"></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="projects">
+      <div class="col-sm-12">
+        <h2 class="text-center well">Projects</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-1">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center">KIDPANION</h3>
+          </div>
+          <div class="panel-body">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+          </div>
+          <div class="panel-footer">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5 col-sm-offset-1">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center">TRACK THE HUNT</h3>
+          </div>
+          <div class="panel-body">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+          </div>
+          <div class="panel-footer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
 </html>

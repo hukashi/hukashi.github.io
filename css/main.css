@@ -1,0 +1,19 @@
+#technologies {
+  text-align: center;
+}
+
+#technologies img {
+  display: inline;
+  height: 150px;
+  opacity: 0.4;
+}
+
+#technologies img:hover {
+  opacity: 1;
+}
+
+#technologies li {
+  display: inline;
+  list-style: none;
+}
+
