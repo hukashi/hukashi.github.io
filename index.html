@@ -6,12 +6,22 @@
       <meta charset="UTF-8">
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="css/main.css">
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="js/bootstrap.js"></script>
 </head>
 <body>
   <div class="navbar navbar-default navbar-static-top">
     <div class="container">
-      <a href="index.html" class='navbar-brand'>JONATHAN CHUNG</a>
-      <ul class="nav navbar-nav navbar-right">
+      <div class="navbar-header">
+        <a href="index.html" class='navbar-brand'>JONATHAN CHUNG</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jonathan">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="jonathan">
         <li><a href="blog/index.html">BLOG</a></li>
         <li><a href="#">MY PROJECTS</a></li>
       </ul>
@@ -163,8 +173,6 @@
       </div>
     </div>
   </div>
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
