@@ -20,3 +20,13 @@
 .panel-title {
   font-size: 25px;
 }
+
+.panel-body {
+  height: 435px;
+}
+
+
+.panel-body ul {
+  list-style: none;
+}
+
