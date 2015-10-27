@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-      <title>Jonathan Chung - Web Dev</title>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css"><!--In the CSS challenge you will need to link to the CSS stylesheet.
-  The link has been left blank for now -->
-
-</head>
-<body>
-  <header>
-    <div id="header-logo">
-      <h1>JONATHAN CHUNG</h1>
-      <h2>WEB DEVELOPER</h2>
-    </div>
-    <nav>
-      <ul>
-        <li class="button"><a href="../index.html">HOME</a></li>
-        <li class="button"><a href="../myprojects.html">MY PROJECTS</a></li>
-        <li class="button"><a href="index.html">BLOG</a></li>
-        <li class="button"><a href="../aboutme.html">ABOUT ME</a></li>
-        <li class="button"><a href="../connect.html">CONNECT</a></li>
+  <head>
+    <title>Jonathan Chung - Web Dev</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="../index.html" class='navbar-brand'>JONATHAN CHUNG</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jonathan">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="jonathan">
+        <li><a href="../blog/index.html">BLOG POSTS</a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-  <h1>RUBY Enumberable Methods</h1>
-  <h2>Enumerable#cycle</h2>
-  <h4>04-10-15</h4>
-
-  <section>
-    <p>In the Ruby language, there are many ways to use methods to help solve problems or make the code do something for you. Ruby like most other languages have built in ways to work through data to get certain information back so that one can use it for other purposes. One of those methods are #cycle.</p>
-    <p>Now let's discuss a little about enumeration and what that means. <a href="http://en.wikipedia.org/wiki/Enumeration">Wikipedia</a> defines enumeration as a complete, ordered listing of all the items in a collection. The act of enumerating is to mention seperately as if in counting; name one by one; specify, as in a list. Ruby has a number of ways to do this. </p>
-    <p>With the method #cycle, when called on a set of numbers, can perform a block of code on each and every item in that set of numbers. You can also call it to enumerate over the set as many times as you like by passing it a value for however many times you would like it to go over teh set of numbers. Take note that if you do not pass it a number, it will repeat itself indefintely and cause a loop that never ends.</p>
-    <code>
-      a = ['a', 'b', 'c']
-    </code>
-    <code>
-      a.cycle { |x| puts x } => print, a,b,c,a,b,c,....forever
-    </code>
-    <code>
-      a.cycle(2) { |x| puts x } => print, a,b,c,a,b,c.
-    </code>
-
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-</main>
-</body>
-<footer>
-  <div id="social-media">
-    <a href="https://github.com/hukashi"><img src="../imgs/github-icon.png" alt="Github"></a>
-    <a href="https://twitter.com/HuKaShI"><img src="../imgs/twitter-icon.png" alt="Twitter"></a>
-    <a href="https://www.facebook.com/jonathan.chung.116"><img src="../imgs/facebook-icon.png" alt="Facebook"></a>
+    </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-center well">RUBY Enumberable Methods</h2>
+        <h4 class="text-center">04-10-15</h4>
+      </div>
+      <div class="col-md-12">
+        <p>In the Ruby language, there are many ways to use methods to help solve problems or make the code do something for you. Ruby like most other languages have built in ways to work through data to get certain information back so that one can use it for other purposes. One of those methods are #cycle.</p>
+        <p>Now let's discuss a little about enumeration and what that means. <a href="http://en.wikipedia.org/wiki/Enumeration">Wikipedia</a> defines enumeration as a complete, ordered listing of all the items in a collection. The act of enumerating is to mention seperately as if in counting; name one by one; specify, as in a list. Ruby has a number of ways to do this. </p>
+        <p>With the method #cycle, when called on a set of numbers, can perform a block of code on each and every item in that set of numbers. You can also call it to enumerate over the set as many times as you like by passing it a value for however many times you would like it to go over teh set of numbers. Take note that if you do not pass it a number, it will repeat itself indefintely and cause a loop that never ends.</p>
+        <code>
+          a = ['a', 'b', 'c']
+        </code>
+        <code>
+          a.cycle { |x| puts x } => print, a,b,c,a,b,c,....forever
+        </code>
+        <code>
+          a.cycle(2) { |x| puts x } => print, a,b,c,a,b,c.
+        </code>
+      </div>
+      <div class="col-md-12">
+        <a href="../blog/index.html" class="btn btn-link pull-right">Return to Blog List</a>
+      </div>
+    </div>
   </div>
-</footer>
+  <div class="footer">
+      <div class="navbar navbar-inverse navbar-fixed-bottom">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="navbar-text">
+                <p>Site built by Jonathan Chung using <a href="http://www.getbootstrap.com" target="_blank">Bootstrap v3.3.5</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="navbar-text pull-right">
+                <a href="mailto:jonathan.chung116@gmail.com">
+                <img src="../imgs/email.png" alt="Email">
+                </a>
+                <a href="https://twitter.com/hukashi" target="_blank">
+                <img src="../imgs/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://github.com/hukashi" target="_blank">
+                <img src="../imgs/github.png" alt="Github">
+                </a>
+                <a href="https://plus.google.com/u/0/101325203228366048733/about" target="_blank">
+                <img src="../imgs/googleplus.png" alt="Google Plus">
+                </a>
+                 <a href="https://www.linkedin.com/in/jonathanechung" target="_blank">
+                <img src="../imgs/linkedin.png" alt="Twitter">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
 </html>
+    <!-- <div class="cheat">
+      <h1>Cheat Sheets</h1>
+      <ul>
+        <li><a href="cheat-sheet-html5.html">HTML5</a></li>
+      </ul>
+    </div> -->
