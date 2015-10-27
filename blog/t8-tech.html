@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-      <title>Jonathan Chung - Web Dev</title>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css"><!--In the CSS challenge you will need to link to the CSS stylesheet.
-  The link has been left blank for now -->
-
-</head>
-<body>
-  <header>
-    <div id="header-logo">
-      <h1>JONATHAN CHUNG</h1>
-      <h2>WEB DEVELOPER</h2>
-    </div>
-    <nav>
-      <ul>
-        <li class="button"><a href="../index.html">HOME</a></li>
-        <li class="button"><a href="../myprojects.html">MY PROJECTS</a></li>
-        <li class="button"><a href="index.html">BLOG</a></li>
-        <li class="button"><a href="../aboutme.html">ABOUT ME</a></li>
-        <li class="button"><a href="../connect.html">CONNECT</a></li>
+  <head>
+    <title>Jonathan Chung - Web Dev</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="../index.html" class='navbar-brand'>JONATHAN CHUNG</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jonathan">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="jonathan">
+        <li><a href="../blog/index.html">BLOG POSTS</a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-  <h1>How do Computers work?</h1>
-  <h2>It's all in the bits</h2>
-  <h4>05-06-2015</h4>
-
-  <section>
-    <p>Today's computers come in all different shapes and sizes. They can be the desktop computer that you have at home or work. They can be the smart phone you use everyday to make phone calls and browse the web. They can even be the watches you wear!</p>
-
-    <p>Although, computers were not always small. In fact, they used to take up entire rooms. And in those days, they were very limited in what they could do. But the interesting fact is that they all work the same way. The only difference is that the components have gotten smaller and can do things much faster today.</p>
-
-    <p>Computers need 4 things in order for them to work. Input, memory, processor, and output. All computers take data in a form called binary. You and I as humans view numbers in decimal. However, a computer can only take in data in binary. This means that we use the digits 0-9 in counting. The computer can only use 0's and 1's. Now, this can seem very limitting, but the computer has no problem scaling up due to the speed in which it can do things. Now binary is basically a system of on and off switches. The combination of on and off tell the computer what that piece of data is. A little more information on binary can be found <a href="http://en.wikipedia.org/wiki/Binary_number">here.</a> </p>
-
-    <p>This binary information is input into memory and stored there. This can be done via a number of means such as a keyboard, mouse, microphone etc. The memory can be a hard drive or RAM(Random Access Memory). The data waits for the command to process it by the processor. This is where a set of instructions is passed to the data and the processor then proceeds to output what it has completed. The output can be displayed on a screen or printed to a printer or even played on speakers.</p>
-
-    <p>Today, most software engineers do not give the instructions to computers using binary also called <a href="http://en.wikipedia.org/wiki/Machine_code">Machine Code.</a> Today we have languages that interpret what we want to send to the computer into binary for us. We have an assortment of languages such as Java, Python, Ruby, Javascript, etc. that enable us to write instructions much more easily.</p>
-
-    <p>This is what makes computers so fascinating. Imagine having to think like a computer. All the 0's and 1's flooding your brain. I wouldn't say it's impossible as we have very complex brains. Computers are just faster at processing the data. Our brains however, possess different strengths that computers may one day be programmed to have.</p>
-
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-</main>
-</body>
-<footer>
-  <div id="social-media">
-    <a href="https://github.com/hukashi"><img src="../imgs/github-icon.png" alt="Github"></a>
-    <a href="https://twitter.com/HuKaShI"><img src="../imgs/twitter-icon.png" alt="Twitter"></a>
-    <a href="https://www.facebook.com/jonathan.chung.116"><img src="../imgs/facebook-icon.png" alt="Facebook"></a>
+    </div>
   </div>
-</footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-center well">How do Computers work?</h2>
+        <h4 class="text-center">05-06-2015</h4>
+      </div>
+      <div class="col-md-12">
+        <h4>It's all in the bits</h4>
+        <p>Today's computers come in all different shapes and sizes. They can be the desktop computer that you have at home or work. They can be the smart phone you use everyday to make phone calls and browse the web. They can even be the watches you wear!</p>
+        <p>Although, computers were not always small. In fact, they used to take up entire rooms. And in those days, they were very limited in what they could do. But the interesting fact is that they all work the same way. The only difference is that the components have gotten smaller and can do things much faster today.</p>
+        <p>Computers need 4 things in order for them to work. Input, memory, processor, and output. All computers take data in a form called binary. You and I as humans view numbers in decimal. However, a computer can only take in data in binary. This means that we use the digits 0-9 in counting. The computer can only use 0's and 1's. Now, this can seem very limitting, but the computer has no problem scaling up due to the speed in which it can do things. Now binary is basically a system of on and off switches. The combination of on and off tell the computer what that piece of data is. A little more information on binary can be found <a href="http://en.wikipedia.org/wiki/Binary_number">here.</a> </p>
+        <p>This binary information is input into memory and stored there. This can be done via a number of means such as a keyboard, mouse, microphone etc. The memory can be a hard drive or RAM(Random Access Memory). The data waits for the command to process it by the processor. This is where a set of instructions is passed to the data and the processor then proceeds to output what it has completed. The output can be displayed on a screen or printed to a printer or even played on speakers.</p>
+        <p>Today, most software engineers do not give the instructions to computers using binary also called <a href="http://en.wikipedia.org/wiki/Machine_code">Machine Code.</a> Today we have languages that interpret what we want to send to the computer into binary for us. We have an assortment of languages such as Java, Python, Ruby, Javascript, etc. that enable us to write instructions much more easily.</p>
+        <p>This is what makes computers so fascinating. Imagine having to think like a computer. All the 0's and 1's flooding your brain. I wouldn't say it's impossible as we have very complex brains. Computers are just faster at processing the data. Our brains however, possess different strengths that computers may one day be programmed to have.</p>
+      </div>
+      <div class="col-md-12">
+        <a href="../blog/index.html" class="btn btn-link pull-right">Return to Blog List</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+      <div class="navbar navbar-inverse navbar-fixed-bottom">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="navbar-text">
+                <p>Site built by Jonathan Chung using <a href="http://www.getbootstrap.com" target="_blank">Bootstrap v3.3.5</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="navbar-text pull-right">
+                <a href="mailto:jonathan.chung116@gmail.com">
+                <img src="../imgs/email.png" alt="Email">
+                </a>
+                <a href="https://twitter.com/hukashi" target="_blank">
+                <img src="../imgs/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://github.com/hukashi" target="_blank">
+                <img src="../imgs/github.png" alt="Github">
+                </a>
+                <a href="https://plus.google.com/u/0/101325203228366048733/about" target="_blank">
+                <img src="../imgs/googleplus.png" alt="Google Plus">
+                </a>
+                 <a href="https://www.linkedin.com/in/jonathanechung" target="_blank">
+                <img src="../imgs/linkedin.png" alt="Twitter">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
 </html>
