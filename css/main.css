@@ -43,3 +43,8 @@ body {
   height: 40px;
 }
 
+code {
+  display: block;
+  margin: 5px 0;
+}
+
