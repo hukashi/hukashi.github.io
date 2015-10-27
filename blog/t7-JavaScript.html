@@ -1,49 +1,84 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-      <title>Jonathan Chung - Web Dev</title>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css"><!--In the CSS challenge you will need to link to the CSS stylesheet.
-  The link has been left blank for now -->
-
-</head>
-<body>
-  <header>
-    <div id="header-logo">
-      <h1>JONATHAN CHUNG</h1>
-      <h2>WEB DEVELOPER</h2>
-    </div>
-    <nav>
-      <ul>
-        <li class="button"><a href="../index.html">HOME</a></li>
-        <li class="button"><a href="../myprojects.html">MY PROJECTS</a></li>
-        <li class="button"><a href="index.html">BLOG</a></li>
-        <li class="button"><a href="../aboutme.html">ABOUT ME</a></li>
-        <li class="button"><a href="../connect.html">CONNECT</a></li>
+  <head>
+    <title>Jonathan Chung - Web Dev</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="../index.html" class='navbar-brand'>JONATHAN CHUNG</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jonathan">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="jonathan">
+        <li><a href="../blog/index.html">BLOG POSTS</a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-  <h1>Javascript vs Ruby</h1>
-  <h2>One is more painful than the other...</h2>
-  <h4>05-01-15</h4>
-
-  <section>
-    <p>Oh Javascript... Oh how I want to master you... Alas, you are not making it easy. Javascript, as you know, is a programming language that uses Object Oriented Design Principles to make things happen. Very similar to Ruby... In fact they share many similarities. The similarities however, are few and the differences are what makes one simpler than the other. </p>
-    <p>Let's talk about a little thing called syntax. Ruby makes coding with it much simpler. Basically, all lines of code end on their respective lines. With Javascript, you have to tell it where it ends. Constantly. It's like a child. It needs to grow up a bit. Ruby seems to be the more mature language that gets how we as adults, speak. Javascript says it needs semi colons but has exceptions. So if you get any of those exceptions confused, debugging is a nightmare. This brings us to my next point.</p>
-    <p>Debugging within node is incredibly infuriating. Sometimes, it will give you a clue as to where your error is ocurring. Sometimes, it just says you have a problem "SOMEWHERE". This is of absolutely no use to me. Ruby, with the help of Rspec gives you much more detail as to what is going wrong with your code. Like a little gps device, it helps you hone in on the problem area of your code. </p>
-    <p>One last point that makes Ruby more of a joy to use is the built in methods. Their are just many more of them. And some exist for all different data types. you don't have to do much conversion with Ruby. With Javascript, you are constantly searching for a method that will work, and then find out you have to do it manually by writing a loop. Iteration within Ruby methods also make it a pleasure to work with. However, working with Javascripts will help build your understanding of loops for sure.</p>
-
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-</main>
-</body>
-<footer>
-  <div id="social-media">
-    <a href="https://github.com/hukashi"><img src="../imgs/github-icon.png" alt="Github"></a>
-    <a href="https://twitter.com/HuKaShI"><img src="../imgs/twitter-icon.png" alt="Twitter"></a>
-    <a href="https://www.facebook.com/jonathan.chung.116"><img src="../imgs/facebook-icon.png" alt="Facebook"></a>
+    </div>
   </div>
-</footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-center well">Javascript vs Ruby</h2>
+        <h4 class="text-center">05-01-15</h4>
+      </div>
+      <div class="col-md-12">
+        <p>Oh Javascript... Oh how I want to master you... Alas, you are not making it easy. Javascript, as you know, is a programming language that uses Object Oriented Design Principles to make things happen. Very similar to Ruby... In fact they share many similarities. The similarities however, are few and the differences are what makes one simpler than the other. </p>
+        <p>Let's talk about a little thing called syntax. Ruby makes coding with it much simpler. Basically, all lines of code end on their respective lines. With Javascript, you have to tell it where it ends. Constantly. It's like a child. It needs to grow up a bit. Ruby seems to be the more mature language that gets how we as adults, speak. Javascript says it needs semi colons but has exceptions. So if you get any of those exceptions confused, debugging is a nightmare. This brings us to my next point.</p>
+        <p>Debugging within node is incredibly infuriating. Sometimes, it will give you a clue as to where your error is ocurring. Sometimes, it just says you have a problem "SOMEWHERE". This is of absolutely no use to me. Ruby, with the help of Rspec gives you much more detail as to what is going wrong with your code. Like a little gps device, it helps you hone in on the problem area of your code. </p>
+        <p>One last point that makes Ruby more of a joy to use is the built in methods. Their are just many more of them. And some exist for all different data types. you don't have to do much conversion with Ruby. With Javascript, you are constantly searching for a method that will work, and then find out you have to do it manually by writing a loop. Iteration within Ruby methods also make it a pleasure to work with. However, working with Javascripts will help build your understanding of loops for sure.</p>
+      </div>
+      <div class="col-md-12">
+        <a href="../blog/index.html" class="btn btn-link pull-right">Return to Blog List</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+      <div class="navbar navbar-inverse navbar-fixed-bottom">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="navbar-text">
+                <p>Site built by Jonathan Chung using <a href="http://www.getbootstrap.com" target="_blank">Bootstrap v3.3.5</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="navbar-text pull-right">
+                <a href="mailto:jonathan.chung116@gmail.com">
+                <img src="../imgs/email.png" alt="Email">
+                </a>
+                <a href="https://twitter.com/hukashi" target="_blank">
+                <img src="../imgs/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://github.com/hukashi" target="_blank">
+                <img src="../imgs/github.png" alt="Github">
+                </a>
+                <a href="https://plus.google.com/u/0/101325203228366048733/about" target="_blank">
+                <img src="../imgs/googleplus.png" alt="Google Plus">
+                </a>
+                 <a href="https://www.linkedin.com/in/jonathanechung" target="_blank">
+                <img src="../imgs/linkedin.png" alt="Twitter">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
 </html>
+    <!-- <div class="cheat">
+      <h1>Cheat Sheets</h1>
+      <ul>
+        <li><a href="cheat-sheet-html5.html">HTML5</a></li>
+      </ul>
+    </div> -->
