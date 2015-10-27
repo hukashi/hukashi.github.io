@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-      <title>Jonathan Chung - Web Dev</title>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css"><!--In the CSS challenge you will need to link to the CSS stylesheet.
-  The link has been left blank for now -->
-
-</head>
-<body>
-  <header>
-    <div id="header-logo">
-      <h1>JONATHAN CHUNG</h1>
-      <h2>WEB DEVELOPER</h2>
-    </div>
-    <nav>
-      <ul>
-        <li class="button"><a href="../index.html">HOME</a></li>
-        <li class="button"><a href="../myprojects.html">MY PROJECTS</a></li>
-        <li class="button"><a href="index.html">BLOG</a></li>
-        <li class="button"><a href="../aboutme.html">ABOUT ME</a></li>
-        <li class="button"><a href="../connect.html">CONNECT</a></li>
+  <head>
+    <title>Jonathan Chung - Web Dev</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="../index.html" class='navbar-brand'>JONATHAN CHUNG</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jonathan">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="jonathan">
+        <li><a href="../blog/index.html">BLOG POSTS</a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-  <h1>Conflict</h1>
-  <h2>What is it good for? Absolutely nothing?!?!</h2>
-  <h4>05-06-2015</h4>
-
-  <section>
-    <p>I can remember a time when I had a heated argument with my wife. The source of most of my conflicts. It's only natural that we do get in the most quarrels because it is the one person I spend the most time with. Anyway, on to the conflict.</p>
-    <p>Recently, I had requested that we take our 15 month old son to go see his grandparents and his great-grandmother. It was basically a spur of the moment plan I had and so my wife was taken by surprise by it. Naturally, I thought she would go along with the plan but complained that there wasn't enough time. His nap would be affected and then would everything would sprial out of control. I was deeply hurt. I told her that she didn't respect me and my wishes. That she didn't want to go just becuase it was my family and not hers we were going to see.</p>
-    <p>I later thought about it and realized my anger was not about any of the emotions I thought I had at the moment. I had forgotten the real reason why I wanted to take my son in the first place. A few weeks earlier, my wife's grandmother had passed away. She was my son's great grandmother on his mother's side. That got me thinking and made me realize that my own grandmother had a limited time as well to see her great grandson. And so I wanted to take him to see her as much as possible. The hurt that I felt with not being able to take him came out as anger towards my wife. </p>
-    <p>If I could go back to the incident, I would phrase my request differently. I would make sure it was known to her why I wanted to take our son to see his great grandmother. The thing I learned most about this conflict was that communication and honesty would have been the key things to make sure that the conflict didn't happen. </p>
-
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-</main>
-</body>
-<footer>
-  <div id="social-media">
-    <a href="https://github.com/hukashi"><img src="../imgs/github-icon.png" alt="Github"></a>
-    <a href="https://twitter.com/HuKaShI"><img src="../imgs/twitter-icon.png" alt="Twitter"></a>
-    <a href="https://www.facebook.com/jonathan.chung.116"><img src="../imgs/facebook-icon.png" alt="Facebook"></a>
+    </div>
   </div>
-</footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-center well">Conflict</h2>
+        <h4 class="text-center">05-06-2015</h4>
+      </div>
+      <div class="col-md-12">
+        <h4>What is it good for? Absolutely nothing?!?!</h4>
+        <p>I can remember a time when I had a heated argument with my wife. The source of most of my conflicts. It's only natural that we do get in the most quarrels because it is the one person I spend the most time with. Anyway, on to the conflict.</p>
+        <p>Recently, I had requested that we take our 15 month old son to go see his grandparents and his great-grandmother. It was basically a spur of the moment plan I had and so my wife was taken by surprise by it. Naturally, I thought she would go along with the plan but complained that there wasn't enough time. His nap would be affected and then would everything would sprial out of control. I was deeply hurt. I told her that she didn't respect me and my wishes. That she didn't want to go just becuase it was my family and not hers we were going to see.</p>
+        <p>I later thought about it and realized my anger was not about any of the emotions I thought I had at the moment. I had forgotten the real reason why I wanted to take my son in the first place. A few weeks earlier, my wife's grandmother had passed away. She was my son's great grandmother on his mother's side. That got me thinking and made me realize that my own grandmother had a limited time as well to see her great grandson. And so I wanted to take him to see her as much as possible. The hurt that I felt with not being able to take him came out as anger towards my wife. </p>
+        <p>If I could go back to the incident, I would phrase my request differently. I would make sure it was known to her why I wanted to take our son to see his great grandmother. The thing I learned most about this conflict was that communication and honesty would have been the key things to make sure that the conflict didn't happen. </p>
+      </div>
+      <div class="col-md-12">
+        <a href="../blog/index.html" class="btn btn-link pull-right">Return to Blog List</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+      <div class="navbar navbar-inverse navbar-fixed-bottom">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="navbar-text">
+                <p>Site built by Jonathan Chung using <a href="http://www.getbootstrap.com" target="_blank">Bootstrap v3.3.5</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="navbar-text pull-right">
+                <a href="mailto:jonathan.chung116@gmail.com">
+                <img src="../imgs/email.png" alt="Email">
+                </a>
+                <a href="https://twitter.com/hukashi" target="_blank">
+                <img src="../imgs/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://github.com/hukashi" target="_blank">
+                <img src="../imgs/github.png" alt="Github">
+                </a>
+                <a href="https://plus.google.com/u/0/101325203228366048733/about" target="_blank">
+                <img src="../imgs/googleplus.png" alt="Google Plus">
+                </a>
+                 <a href="https://www.linkedin.com/in/jonathanechung" target="_blank">
+                <img src="../imgs/linkedin.png" alt="Twitter">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
 </html>
